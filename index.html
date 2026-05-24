@@ -1,196 +1,219 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- SEO -->
-    <title>Ice Chill Bar - Best Chill Discord Server for Friends & Fun</title>
-    <meta name="description" content="Join Ice Chill Bar, a chill Discord server for fun talks, gaming, memes, music, events, and making new friends online.">
-    <meta name="keywords" content="Discord server, chill server, fun community, gaming server, make friends, active discord, hangout server">
+<!-- SEO -->
+<title>Ice Chill Bar | Best Chill Discord Community</title>
+<meta name="description" content="Join Ice Chill Bar — a chill Discord community for gaming, memes, music, events, and making friends online. Active, friendly, and always vibing.">
+<meta name="keywords" content="Discord server, chill Discord, gaming community, make friends online, meme server, music Discord, active server, hangout Discord">
 
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<!-- Open Graph (Discord/Google preview) -->
+<meta property="og:title" content="Ice Chill Bar - Chill Discord Community">
+<meta property="og:description" content="A cozy Discord hangout for gaming, memes, music, and making friends. Join the vibe today.">
+<meta property="og:type" content="website">
 
-        <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Poppins', sans-serif;
-        }
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
 
-        body {
-            background: linear-gradient(135deg, #0f172a, #1e293b, #111827);
-            color: white;
-            min-height: 100vh;
-        }
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px 60px;
-            background: rgba(255,255,255,0.05);
-            backdrop-filter: blur(10px);
-            position: sticky;
-            top: 0;
-        }
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
 
-        .logo {
-            font-size: 28px;
-            font-weight: 700;
-            color: #7dd3fc;
-        }
+html {
+    scroll-behavior: smooth;
+}
 
-        .hero {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            padding: 120px 20px;
-        }
+body {
+    background: linear-gradient(135deg, #0f172a, #1e293b, #111827);
+    color: white;
+}
 
-        .hero h1 {
-            font-size: 64px;
-            margin-bottom: 20px;
-            color: #e0f2fe;
-        }
+/* NAV */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 18px 50px;
+    position: sticky;
+    top: 0;
+    background: rgba(0,0,0,0.25);
+    backdrop-filter: blur(10px);
+}
 
-        .hero p {
-            max-width: 800px;
-            font-size: 20px;
-            color: #cbd5e1;
-            line-height: 1.8;
-        }
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: #7dd3fc;
+}
 
-        .join-btn {
-            margin-top: 35px;
-            padding: 16px 40px;
-            border-radius: 15px;
-            border: none;
-            background: #38bdf8;
-            color: white;
-            font-size: 18px;
-            font-weight: 600;
-            cursor: pointer;
-            transition: 0.3s ease;
-            text-decoration: none;
-        }
-        .join-btn:hover {
-            transform: translateY(-4px);
-            background: #0ea5e9;
-        }
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 130px 20px;
+    animation: fadeUp 1s ease;
+}
 
-        .section {
-            padding: 80px 10%;
-        }
+.hero h1 {
+    font-size: 60px;
+    color: #e0f2fe;
+}
 
+.hero p {
+    max-width: 750px;
+    margin: 20px auto;
+    font-size: 18px;
+    color: #cbd5e1;
+    line-height: 1.7;
+}
 
-        .section h2 {
-            font-size: 42px;
-            margin-bottom: 20px;
-            color: #7dd3fc;
-        }
+/* BUTTON */
+.btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 14px 34px;
+    background: #38bdf8;
+    color: white;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
 
-        .cards {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 25px;
-            margin-top: 40px;
-        }
+.btn:hover {
+    transform: translateY(-4px);
+    background: #0ea5e9;
+}
 
-        .card {
-            background: rgba(255,255,255,0.05);
-            border-radius: 20px;
-            padding: 30px;
-            transition: 0.3s;
-            border: 1px solid rgba(255,255,255,0.08);
-        }
+/* SECTIONS */
+.section {
+    padding: 80px 10%;
+}
 
-        .card:hover {
-            transform: translateY(-8px);
-            background: rgba(255,255,255,0.08);
-        }
+.section h2 {
+    font-size: 36px;
+    color: #7dd3fc;
+    margin-bottom: 30px;
+}
 
-        .card h3 {
-            margin-bottom: 12px;
-            color: #bae6fd;
-        }
+/* CARDS */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+}
 
-        footer {
-            text-align: center;
-            padding: 40px;
-            color: #94a3b8;
-        }
+.card {
+    padding: 25px;
+    background: rgba(255,255,255,0.05);
+    border-radius: 16px;
+    border: 1px solid rgba(255,255,255,0.08);
+    transition: 0.3s;
+}
 
-        @media(max-width: 768px) {
-            .hero h1 {
-                font-size: 42px;
-            }
+.card:hover {
+    transform: translateY(-6px);
+    background: rgba(255,255,255,0.08);
+}
 
-            nav {
-                padding: 20px;
-            }
-        }
-    </style>
+.card h3 {
+    color: #bae6fd;
+    margin-bottom: 10px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 30px;
+    color: #94a3b8;
+}
+
+/* ANIMATION */
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    .hero h1 { font-size: 38px; }
+    nav { padding: 15px 20px; }
+}
+</style>
+
+<!-- Schema.org -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Ice Chill Bar",
+  "description": "A chill Discord community for gaming, memes, music, and making friends online.",
+  "url": "YOUR_WEBSITE_URL"
+}
+</script>
+
 </head>
+
 <body>
 
-    <nav>
-        <div class="logo">❄ Ice Chill Bar</div>
-    </nav>
+<nav>
+    <div class="logo">❄ Ice Chill Bar</div>
+</nav>
 
-    <section class="hero">
-        <h1>Welcome to Ice Chill Bar</h1>
+<section class="hero">
+    <h1>Chill. Talk. Vibe.</h1>
 
-        <p>
-            Ice Chill Bar is one of the best chill Discord communities for making friends,
-            gaming, memes, music, events, and fun conversations. Join a relaxing and active
-            hangout server where everyone can vibe, socialize, and enjoy a cozy online community.
-        </p>
+    <p>
+        Ice Chill Bar is a friendly Discord community where you can make friends,
+        join gaming sessions, share memes, listen to music, and enjoy a cozy online vibe.
+        Always active, always chill.
+    </p>
 
-        <a class="join-btn" href="YOUR_DISCORD_INVITE_LINK">Join The Server</a>
-    </section>
+    <a class="btn" href="YOUR_DISCORD_INVITE_LINK">Join The Server</a>
+</section>
 
-    <section class="section">
-        <h2>Why Join Ice Chill Bar?</h2>
+<section class="section">
+    <h2>Why Join?</h2>
 
-        <div class="cards">
-            <div class="card">
-                <h3>💬 Chill Talks</h3>
-                <p>Meet friendly people and enjoy active conversations every day.</p>
-            </div>
-
-            <div class="card">
-                <h3>🎮 Gaming</h3>
-                <p>Find teammates, discuss games, and hang out while gaming.</p>
-            </div>
-
-            <div class="card">
-                <h3>🎵 Music & Vibes</h3>
-                <p>Share playlists, songs, and enjoy late night chill sessions.</p>
-            </div>
-
-            <div class="card">
-                <h3>🎉 Events</h3>
-                <p>Fun activities, community events, giveaways, and competitions.</p>
-            </div>
+    <div class="cards">
+        <div class="card">
+            <h3>💬 Chill Talks</h3>
+            <p>Meet new people and chat every day in a friendly space.</p>
         </div>
-    </section>
 
-    <section class="section">
-        <h2>Community Keywords</h2>
+        <div class="card">
+            <h3>🎮 Gaming</h3>
+            <p>Find teammates, squads, and gaming buddies easily.</p>
+        </div>
 
-        <p style="line-height: 2; color: #cbd5e1; font-size: 18px;">
-            chill Discord server • active hangout server • fun online community • make friends online • gaming server • meme community • cozy Discord server • music and vibes • late night talks • social Discord server
-        </p>
-    </section>
+        <div class="card">
+            <h3>🎵 Music & Vibes</h3>
+            <p>Late-night music sessions and chill playlists.</p>
+        </div>
 
-    <footer>
-        ❄ Ice Chill Bar • Chill • Talk • Vibe • Repeat
-    </footer>
+        <div class="card">
+            <h3>🎉 Events</h3>
+            <p>Giveaways, events, and fun community activities.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <h2>SEO Keywords</h2>
+    <p style="color:#cbd5e1; line-height:2;">
+        chill Discord server • gaming community • make friends online • meme server • active Discord • hangout server • music Discord • social community • fun chat server
+    </p>
+</section>
+
+<footer>
+    ❄ Ice Chill Bar • Chill • Talk • Vibe • Repeat
+</footer>
 
 </body>
 </html>
